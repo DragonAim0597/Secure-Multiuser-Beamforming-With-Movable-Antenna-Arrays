@@ -270,7 +270,3 @@ parfor Monte = [1:1:Monte_Carlo]
 end
 plot(SNR_dB,BCD_Result/Monte_Carlo,'-o');hold on;
 plot(SNR_dB,FPA_Result/Monte_Carlo,'-s');hold on;
-% plot(SNR_dB,mean(Energy_Result),'-x');hold on;
-% plot(SNR_dB,mean(FPA_Result),'-*');hold on;
-% Data = [mean(BCD_Result);mean(FPA_Result)];
-% save Compare_WSSR_vs_SNR_New Data
