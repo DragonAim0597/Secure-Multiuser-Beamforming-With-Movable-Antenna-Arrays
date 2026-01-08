@@ -1,4 +1,3 @@
-% K = 4; A = 3 or 1; K =2; A = 2 or 0.5;
 K = 2; % UE Number
 J = 4; % Eve Number
 Antenna_Number = [2:1:6]; % BS Antenna Number
@@ -271,7 +270,5 @@ parfor Monte = [1:1:Monte_Carlo]
 end
 plot(Antenna_Number,BCD_Result/Monte_Carlo,'-o');hold on;
 plot(Antenna_Number,FPA_Result/Monte_Carlo,'-s');hold on;
-% plot(SNR_dB,mean(Energy_Result),'-x');hold on;
-% plot(SNR_dB,mean(FPA_Result),'-*');hold on;
-% Data = [mean(BCD_Result);mean(FPA_Result)];
+
 % save Compare_WSSR_vs_SNR_New Data
